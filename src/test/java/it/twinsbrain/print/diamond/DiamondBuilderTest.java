@@ -32,13 +32,13 @@ public class DiamondBuilderTest {
 
     @Test
     public void diamond_for_a() throws Exception {
-        String diamond = new DiamondBuilder('A').build();
+        String diamond = new DiamondBuilder().build('A');
         assertThat(diamond, is(equalTo("A\n")));
     }
 
     @Test
     public void diamond_for_b() throws Exception {
-        String diamond = new DiamondBuilder('B').build();
+        String diamond = new DiamondBuilder().build('B');
         String expectedDiamond = " A \n"
                                 +"B B\n"
                                 +" A \n";
@@ -47,7 +47,7 @@ public class DiamondBuilderTest {
 
     @Test
     public void diamond_for_c() throws Exception {
-        String diamond = new DiamondBuilder('C').build();
+        String diamond = new DiamondBuilder().build('C');
         String expectedDiamond = "  A  \n"
                                 +" B B \n"
                                 +"C   C\n"
@@ -58,7 +58,7 @@ public class DiamondBuilderTest {
 
     @Test
     public void diamond_for_d() throws Exception {
-        String diamond = new DiamondBuilder('D').build();
+        String diamond = new DiamondBuilder().build('D');
         String expectedDiamond = "   A   \n"+
                                  "  B B  \n"+
                                  " C   C \n"+
@@ -71,7 +71,7 @@ public class DiamondBuilderTest {
 
     @Test
     public void diamond_for_e() throws Exception {
-        String diamond = new DiamondBuilder('E').build();
+        String diamond = new DiamondBuilder().build('E');
         String expectedDiamond = "    A    \n"+
                                  "   B B   \n"+
                                  "  C   C  \n"+
