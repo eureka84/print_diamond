@@ -15,7 +15,7 @@ public abstract class DiamondLine {
         externalSpaces = Strings.repeat(" ", target - current);
     }
 
-    public static DiamondLine get(final char target, final char current){
+    public static DiamondLine createFor(final char target, final char current){
         if(current == 'A'){
             return new ExternalLine(target, current);
         } else {
